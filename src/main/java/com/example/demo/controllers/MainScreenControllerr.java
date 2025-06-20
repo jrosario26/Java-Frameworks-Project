@@ -43,6 +43,10 @@ public class MainScreenControllerr {
     @GetMapping("/mainscreen")
     public String listPartsandProducts(Model theModel, @Param("partkeyword") String partkeyword, @Param("productkeyword") String productkeyword){
         //add to the sprig model
+        theModel.addAttribute("pageName", "Ascended Computer Parts");
+        theModel.addAttribute("companyName", "Ascended Computer Parts");
+        theModel.addAttribute("partsHeading", "PC Components");
+        theModel.addAttribute("productsHeading", "Computers");
         List<Part> partList=partService.listAll(partkeyword);
         theModel.addAttribute("parts",partList);
         theModel.addAttribute("partkeyword",partkeyword);
