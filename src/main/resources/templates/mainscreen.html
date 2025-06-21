@@ -14,9 +14,9 @@
     <title th:text="${pageName}">My Bicycle Shop</title>
 </head>
 <body>
-
 <div class="container">
     <h1 th:text="${companyName}">Shop</h1>
+    <a th:href="@{/About}">About</a>
     <hr>
     <h2 th:text="${partsHeading}">Parts</h2>
     <form th:action="@{/mainscreen}">

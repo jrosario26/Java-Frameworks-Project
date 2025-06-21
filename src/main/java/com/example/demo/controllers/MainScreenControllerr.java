@@ -10,6 +10,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ import java.util.List;
  */
 
 @Controller
+@RequestMapping("/")
 public class MainScreenControllerr {
    // private final PartRepository partRepository;
    // private final ProductRepository productRepository;'
@@ -55,5 +57,10 @@ public class MainScreenControllerr {
         theModel.addAttribute("products", productList);
         theModel.addAttribute("productkeyword",productkeyword);
         return "mainscreen";
+    }
+
+    @GetMapping("/About")
+    public String about() {
+        return "About";
     }
 }

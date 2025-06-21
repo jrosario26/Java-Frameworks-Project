@@ -23,3 +23,8 @@ Task C:
 
 8. In the mainscreen.html template, line 53:
 - Added th:text attribute to <h2> tag for productsHeading
+
+Task D:
+1. Created About.html page, and added th:href attributes to both mainscreen.html and About.html to move back and forth
+between said pages. In About.html, included information about the company.
+
