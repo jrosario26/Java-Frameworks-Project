@@ -28,3 +28,7 @@ Task D:
 1. Created About.html page, and added th:href attributes to both mainscreen.html and About.html to move back and forth
 between said pages. In About.html, included information about the company.
 
+Task E:
+1. Changed the name of the products from "Computers" to "Computers and Kits" to reflect the company offering
+Computer part kits as well.
+2. Added a sample inventory for both Components and Computers and Kits
