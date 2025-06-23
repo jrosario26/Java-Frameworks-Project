@@ -32,3 +32,10 @@ Task E:
 1. Changed the name of the products from "Computers" to "Computers and Kits" to reflect the company offering
 Computer part kits as well.
 2. Added a sample inventory for both Components and Computers and Kits
+
+Task F:
+1. Removed the demo products from the MainScreenControllerr.java file, and used the buttons on the webpage to
+add the products for the testing of the Buy Now button.
+2. Added the Buy Now button, and set functionality to decrement inventory when product is bought, and save the
+difference after the fact.
+3. Verified the success and failure messages work.

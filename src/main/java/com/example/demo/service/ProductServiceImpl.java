@@ -56,6 +56,17 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
+    public void buy(Product theProduct) {
+        if (theProduct.getInv() > 0) {
+            theProduct.setInv(theProduct.getInv() - 1);
+            productRepository.save(theProduct);
+        }
+        else {
+            throw new RuntimeException("Product out of stock.");
+        }
+    }
+
+    @Override
     public void deleteById(int theId) {
         Long theIdl=(long)theId;
         productRepository.deleteById(theIdl);
