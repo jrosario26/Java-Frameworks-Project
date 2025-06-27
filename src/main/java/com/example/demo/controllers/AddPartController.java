@@ -46,9 +46,15 @@ public class AddPartController {
         }
         else{
             OutsourcedPart outsourcedPart=outsourcedrepo.findById(theId);
-            theModel.addAttribute("outsourcedpart",outsourcedPart);
-            formtype="OutsourcedPartForm";
+            if (outsourcedPart.getInv() >= outsourcedPart.getMinInv() && outsourcedPart.getInv() <= outsourcedPart.getMaxInv()) {
+                theModel.addAttribute("outsourcedpart", outsourcedPart);
+                formtype = "OutsourcedPartForm";
+            }
+            else {
+                return "redirect:/";
+            }
         }
+
         return formtype;
     }
 

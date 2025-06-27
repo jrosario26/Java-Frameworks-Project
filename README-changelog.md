@@ -39,3 +39,8 @@ add the products for the testing of the Buy Now button.
 2. Added the Buy Now button, and set functionality to decrement inventory when product is bought, and save the
 difference after the fact.
 3. Verified the success and failure messages work.
+
+Task G:
+1. Added additional fields in the inhouse and outsourced forms for minimum and maximum desired inventory values.
+2. Database file renamed.
+3. Inhouse and outsourced parts will now only be created if they are within the min and max desired inventory values.

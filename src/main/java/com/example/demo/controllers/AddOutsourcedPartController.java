@@ -43,6 +43,11 @@ public class AddOutsourcedPartController {
         if(bindingResult.hasErrors()){
             return "OutsourcedPartForm";
         }
+
+        if (part.getInv() < part.getMinInv() || part.getInv() > part.getMaxInv()) {
+            return "redirect:/";
+        }
+
         else{
         OutsourcedPartService repo=context.getBean(OutsourcedPartServiceImpl.class);
         OutsourcedPart op=repo.findById((int)part.getId());
