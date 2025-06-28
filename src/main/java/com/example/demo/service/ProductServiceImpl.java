@@ -59,6 +59,7 @@ public class ProductServiceImpl implements ProductService{
     public void buy(Product theProduct) {
         if (theProduct.getInv() > 0) {
             theProduct.setInv(theProduct.getInv() - 1);
+
             productRepository.save(theProduct);
         }
         else {

@@ -78,6 +78,22 @@ public class AddProductController {
                 Product product2 = repo.findById((int) product.getId());
                 PartService partService1 = context.getBean(PartServiceImpl.class);
                 if(product.getInv()- product2.getInv()>0) {
+                    int amountToDeduct = product.getInv() - product2.getInv();
+                    for (Part p : product2.getParts()) {
+                        if ((p.getInv() - amountToDeduct) < p.getMinInv()) {
+                            theModel.addAttribute("inventoryError", "Inventory will be reduced below the stopping point.");
+                            theModel.addAttribute("parts", partService.findAll());
+                            List<Part> availParts = new ArrayList<>();
+                            for (Part part : partService.findAll()) {
+                                if (!product2.getParts().contains(part)) {
+                                    availParts.add(part);
+                                }
+                            }
+                            theModel.addAttribute("availparts", availParts);
+                            theModel.addAttribute("assparts", product2.getParts());
+                            return "productForm";
+                        }
+                    }
                     for (Part p : product2.getParts()) {
                         int inv = p.getInv();
                         p.setInv(inv - (product.getInv() - product2.getInv()));

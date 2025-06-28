@@ -48,3 +48,7 @@ Task G:
 Task G v2:
 1. Reworked the code to take you to a page that tells you the inventory should be between the specified minimum and maximum numbers.
 
+Task H:
+1. Added display messages that pop up over the inventory fields of both parts and products.
+   - If adding parts to a product, an error message with red text will display if the inventory for the product is above the available parts.
+   - If either adding parts with inventories above or below the maximum or minimum numbers, red text will appear above the inventory field.
