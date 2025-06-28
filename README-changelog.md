@@ -44,3 +44,7 @@ Task G:
 1. Added additional fields in the inhouse and outsourced forms for minimum and maximum desired inventory values.
 2. Database file renamed.
 3. Inhouse and outsourced parts will now only be created if they are within the min and max desired inventory values.
+
+Task G v2:
+1. Reworked the code to take you to a page that tells you the inventory should be between the specified minimum and maximum numbers.
+

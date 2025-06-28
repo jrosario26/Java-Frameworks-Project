@@ -44,7 +44,7 @@ public class AddInhousePartController{
         }
 
         if (part.getInv() < part.getMinInv() || part.getInv() > part.getMaxInv()) {
-            return "redirect:/";
+            return "inhouseInvBelowOrAbove";
         }
         else {
         InhousePartService repo=context.getBean(InhousePartServiceImpl.class);
