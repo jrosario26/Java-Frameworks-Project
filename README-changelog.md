@@ -59,3 +59,4 @@ Task I:
 Task J:
 1. Removed the ProductPriceValidator as well as its html to get rid of the price checker, as deals for buying products opposed to single components may be desired.
 
+
