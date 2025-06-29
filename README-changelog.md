@@ -55,3 +55,7 @@ Task H:
 
 Task I:
 1. In the PartTest class, added tests for going below the minimum value, and going above the maximum value.
+
+Task J:
+1. Removed the ProductPriceValidator as well as its html to get rid of the price checker, as deals for buying products opposed to single components may be desired.
+
