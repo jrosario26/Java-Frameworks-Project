@@ -52,3 +52,6 @@ Task H:
 1. Added display messages that pop up over the inventory fields of both parts and products.
    - If adding parts to a product, an error message with red text will display if the inventory for the product is above the available parts.
    - If either adding parts with inventories above or below the maximum or minimum numbers, red text will appear above the inventory field.
+
+Task I:
+1. In the PartTest class, added tests for going below the minimum value, and going above the maximum value.
