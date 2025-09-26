@@ -172,4 +172,16 @@ In PartTest.java:
 allow for pricing discounts for buying preassembled products vs buying parts for build-your-own setups
   - This also removed the import for ValidProductPrice and the @ValidProductPrice lines in Product.java (lines 4 and 20 respectively)
 
+-------Task E Redo
+1. In DemoApplication.java:
+- Reworked lines 29-35 to use the save method for creating temporary inhouse and outsourced parts.
+- Reworked lines 54-64 to use the save method for creating temporary products.
+- Commented out the for loop for the parts starting at line 37.
+
+2. In application.properties:
+- Changed the name of the database to D287-jros818-3
+
+3. In AddPartController.java:
+- Removed an if statement on line 49 and an else statement starting on line 53-55
+
 
