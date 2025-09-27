@@ -184,4 +184,8 @@ allow for pricing discounts for buying preassembled products vs buying parts for
 3. In AddPartController.java:
 - Removed an if statement on line 49 and an else statement starting on line 53-55
 
+--------Task J Redo
+1. In the project:
+- Removed a missed DeletePartValidator class file.
+
 
